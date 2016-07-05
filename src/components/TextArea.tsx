@@ -11,7 +11,6 @@ export default class TextArea extends React.Component<TextAreaProps, any> {
     };
     
     private style = {
-        margin: 15,
         width: "100%",
         height: 125,
         borderWidth: 2,
@@ -21,7 +20,7 @@ export default class TextArea extends React.Component<TextAreaProps, any> {
     
     render () {
         return (
-            <div>
+            <div style={{margin: 15}}>
                 <textarea type="text" onChange={this.showTextSummary} value={this.props.text} style={this.style}/>
             </div>
         );
